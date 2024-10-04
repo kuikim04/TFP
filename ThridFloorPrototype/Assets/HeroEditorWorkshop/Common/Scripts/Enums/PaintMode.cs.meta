@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 579d97636d3d8fa458e8bd78dd8e49eb
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 247671
+  packageName: 'Fantasy Workshop: Modular Sprite Builder'
+  packageVersion: 1.7
+  assetPath: Assets/HeroEditorWorkshop/Common/Scripts/Enums/PaintMode.cs
+  uploadId: 658997

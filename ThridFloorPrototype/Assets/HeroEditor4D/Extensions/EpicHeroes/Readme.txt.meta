@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 470e4caf8b78d574facc6399e5f973b1
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147364
+  packageName: 'Character Editor 4D: Megapack'
+  packageVersion: 6.8
+  assetPath: Assets/HeroEditor4D/Extensions/EpicHeroes/Readme.txt
+  uploadId: 654166

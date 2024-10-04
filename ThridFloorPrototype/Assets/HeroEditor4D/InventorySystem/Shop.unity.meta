@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2639d34d0b65c2740858e0284f11468f
+timeCreated: 1508494600
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147364
+  packageName: 'Character Editor 4D: Megapack'
+  packageVersion: 6.8
+  assetPath: Assets/HeroEditor4D/InventorySystem/Shop.unity
+  uploadId: 654166

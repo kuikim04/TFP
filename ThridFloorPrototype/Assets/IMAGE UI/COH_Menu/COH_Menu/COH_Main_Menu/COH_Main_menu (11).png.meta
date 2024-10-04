@@ -1,0 +1,1268 @@
+fileFormatVersion: 2
+guid: 83811a26a06bc93419148091204dddb7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7646972617052710058
+    second: COH_Main_menu (11)_0
+  - first:
+      213: 3987987595522668822
+    second: COH_Main_menu (11)_1
+  - first:
+      213: 4174406514901466564
+    second: COH_Main_menu (11)_2
+  - first:
+      213: 8127799730827336266
+    second: COH_Main_menu (11)_3
+  - first:
+      213: 8388571983121237600
+    second: COH_Main_menu (11)_4
+  - first:
+      213: -6597823936450841726
+    second: COH_Main_menu (11)_5
+  - first:
+      213: 8223057253858668948
+    second: COH_Main_menu (11)_6
+  - first:
+      213: 497516761951119634
+    second: COH_Main_menu (11)_7
+  - first:
+      213: -7057797974780125615
+    second: COH_Main_menu (11)_8
+  - first:
+      213: 1219003830909915577
+    second: COH_Main_menu (11)_9
+  - first:
+      213: -164848234840730536
+    second: COH_Main_menu (11)_10
+  - first:
+      213: 4767415336370486321
+    second: COH_Main_menu (11)_11
+  - first:
+      213: 6452898827402284287
+    second: COH_Main_menu (11)_12
+  - first:
+      213: 7368728501689262351
+    second: COH_Main_menu (11)_13
+  - first:
+      213: 1575803647342007886
+    second: COH_Main_menu (11)_14
+  - first:
+      213: 6682529484220641442
+    second: COH_Main_menu (11)_15
+  - first:
+      213: -3044317243470528381
+    second: COH_Main_menu (11)_16
+  - first:
+      213: 1097618709513209423
+    second: COH_Main_menu (11)_17
+  - first:
+      213: -1580847554023827070
+    second: COH_Main_menu (11)_18
+  - first:
+      213: -4972768746836873005
+    second: COH_Main_menu (11)_19
+  - first:
+      213: 4458607914966632766
+    second: COH_Main_menu (11)_20
+  - first:
+      213: -2112009758027144132
+    second: COH_Main_menu (11)_21
+  - first:
+      213: 821149667534939677
+    second: COH_Main_menu (11)_22
+  - first:
+      213: 4396933498162138310
+    second: COH_Main_menu (11)_23
+  - first:
+      213: 8289972032121562524
+    second: COH_Main_menu (11)_24
+  - first:
+      213: -2737174818164169124
+    second: COH_Main_menu (11)_25
+  - first:
+      213: -5418868483459614582
+    second: COH_Main_menu (11)_26
+  - first:
+      213: 7971095442997602965
+    second: COH_Main_menu (11)_27
+  - first:
+      213: -2213228839394274262
+    second: COH_Main_menu (11)_28
+  - first:
+      213: -6343673725185993128
+    second: COH_Main_menu (11)_29
+  - first:
+      213: 4829229676612424097
+    second: COH_Main_menu (11)_30
+  - first:
+      213: -524029512464381896
+    second: COH_Main_menu (11)_31
+  - first:
+      213: -1693812607511565816
+    second: COH_Main_menu (11)_32
+  - first:
+      213: 6874880824619967948
+    second: COH_Main_menu (11)_33
+  - first:
+      213: -1000317743596686710
+    second: COH_Main_menu (11)_34
+  - first:
+      213: -6292431472200628429
+    second: COH_Main_menu (11)_35
+  - first:
+      213: -8577499748457670226
+    second: COH_Main_menu (11)_36
+  - first:
+      213: -8546493486832711125
+    second: COH_Main_menu (11)_37
+  - first:
+      213: 4314262188879285135
+    second: COH_Main_menu (11)_38
+  - first:
+      213: 3023556773601689923
+    second: COH_Main_menu (11)_39
+  - first:
+      213: -5735995465206681377
+    second: COH_Main_menu (11)_40
+  - first:
+      213: -3727040383780712040
+    second: COH_Main_menu (11)_41
+  - first:
+      213: 798311604168198230
+    second: COH_Main_menu (11)_42
+  - first:
+      213: 8530922387387597235
+    second: COH_Main_menu (11)_43
+  - first:
+      213: 6507736943626401202
+    second: COH_Main_menu (11)_44
+  - first:
+      213: -2224407821890167784
+    second: COH_Main_menu (11)_45
+  - first:
+      213: 4194325114907908247
+    second: COH_Main_menu (11)_46
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1784
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65b1f619bee70e590800000000000000
+      internalID: -7646972617052710058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 1802
+        width: 267
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 619facfb69d285730800000000000000
+      internalID: 3987987595522668822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_2
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 1796
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cd37ccbb987ee930800000000000000
+      internalID: 4174406514901466564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_3
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 1782
+        width: 290
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4a9a71dacebbc070800000000000000
+      internalID: 8127799730827336266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_4
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1797
+        width: 275
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0664cba26c13a6470800000000000000
+      internalID: 8388571983121237600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_5
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1790
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28337492612df64a0800000000000000
+      internalID: -6597823936450841726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_6
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1743
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 491f1f7310b2e1270800000000000000
+      internalID: 8223057253858668948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_7
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 1781
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21926e9ebd887e600800000000000000
+      internalID: 497516761951119634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_8
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 1787
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15e52c0c22aad0e90800000000000000
+      internalID: -7057797974780125615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_9
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 1792
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b1d9319685cae010800000000000000
+      internalID: 1219003830909915577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_10
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 1780
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 854d770676756bdf0800000000000000
+      internalID: -164848234840730536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_11
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1739
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13cbc155df2492240800000000000000
+      internalID: 4767415336370486321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_12
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1777
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffc09da6b4d4d8950800000000000000
+      internalID: 6452898827402284287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_13
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 1749
+        width: 11
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f012c75f78bf24660800000000000000
+      internalID: 7368728501689262351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_14
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 1778
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e46d59b71116ed510800000000000000
+      internalID: 1575803647342007886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_15
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 1771
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a0bb0c092d1dbc50800000000000000
+      internalID: 6682529484220641442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_16
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 1744
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 380c757b89960c5d0800000000000000
+      internalID: -3044317243470528381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_17
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 1770
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f468b5f96668b3f00800000000000000
+      internalID: 1097618709513209423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_18
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 1702
+        width: 236
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2895d5a7683bf0ae0800000000000000
+      internalID: -1580847554023827070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_19
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 1708
+        width: 59
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d0bf9eeb2d2dfab0800000000000000
+      internalID: -4972768746836873005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_20
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 1754
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e39c454a64820ed30800000000000000
+      internalID: 4458607914966632766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_21
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 1745
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3422a2a052a0b2e0800000000000000
+      internalID: -2112009758027144132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_22
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 1727
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d16a9d0a54f456b00800000000000000
+      internalID: 821149667534939677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_23
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1737
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cc48fa78bb050d30800000000000000
+      internalID: 4396933498162138310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_24
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 1739
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c95678c14a5eb0370800000000000000
+      internalID: 8289972032121562524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_25
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 1736
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c562e2b410a930ad0800000000000000
+      internalID: -2737174818164169124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_26
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 1728
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8874de13df4cc4b0800000000000000
+      internalID: -5418868483459614582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_27
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 1740
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59a6b9e92150f9e60800000000000000
+      internalID: 7971095442997602965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_28
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 1719
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a241145c8180941e0800000000000000
+      internalID: -2213228839394274262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_29
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1702
+        width: 230
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8565f4f6b5eb6f7a0800000000000000
+      internalID: -6343673725185993128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_30
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1718
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a11245fdced40340800000000000000
+      internalID: 4829229676612424097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_31
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 1722
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8384db15fe54ab8f0800000000000000
+      internalID: -524029512464381896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_32
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 1714
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80ae13d586e5e78e0800000000000000
+      internalID: -1693812607511565816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_33
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 1702
+        width: 251
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc52e907fab786f50800000000000000
+      internalID: 6874880824619967948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_34
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 1708
+        width: 26
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a823666ef482e12f0800000000000000
+      internalID: -1000317743596686710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_35
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1705
+        width: 22
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3374efd2aeacca8a0800000000000000
+      internalID: -6292431472200628429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_36
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1531
+        width: 17
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea99d20ac6996f880800000000000000
+      internalID: -8577499748457670226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_37
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 1578
+        width: 95
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2a852a7471c46980800000000000000
+      internalID: -8546493486832711125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_38
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 1580
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8b8c045a965fdb30800000000000000
+      internalID: 4314262188879285135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_39
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1550
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34141c8bdd4d5f920800000000000000
+      internalID: 3023556773601689923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_40
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1515
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd0ba17d386a560b0800000000000000
+      internalID: -5735995465206681377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_41
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1501
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89117358484e64cc0800000000000000
+      internalID: -3727040383780712040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_42
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1498
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6588482ac2c241b00800000000000000
+      internalID: 798311604168198230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_43
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1501
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b14aaa66bce36670800000000000000
+      internalID: 8530922387387597235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_44
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 187
+        width: 16
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b5b9805540205a50800000000000000
+      internalID: 6507736943626401202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_45
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 94
+        width: 193
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81cd2a41fd05121e0800000000000000
+      internalID: -2224407821890167784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COH_Main_menu (11)_46
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 114
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 798d592387c353a30800000000000000
+      internalID: 4194325114907908247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

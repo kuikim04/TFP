@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ac379c70b998c8c42b15dd75a7b51e3f
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147364
+  packageName: 'Character Editor 4D: Megapack'
+  packageVersion: 6.8
+  assetPath: Assets/HeroEditor4D/InventorySystem/Prefabs/InventoryH.prefab
+  uploadId: 654166

@@ -1,0 +1,210 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5ac69fdd2d0b124b949bca0099b9bac, type: 3}
+  m_Name: PlayerData
+  m_EditorClassIdentifier: 
+  ID: 66aa6debcd497a9ed306bf37
+  UserID: 1
+  Name: 
+  Coin: 95044
+  Diamond: 10001
+  region: 3
+  stage: 30
+  Inventory:
+  - ID: 'FantasyHeroes.Basic.Armor.AcornArmor [ShowEars]'
+    Name: 
+  - ID: FantasyHeroes.Basic.Armor.AdvancedWizardRobe
+    Name: 
+  - ID: FantasyHeroes.Basic.Armor.AlchemistClothes
+    Name: 
+  - ID: 'FantasyHeroes.Basic.Armor.ArcherTunic [ShowEars]'
+    Name: 
+  - ID: FantasyHeroes.Basic.Armor.BanditArmor
+    Name: 
+  - ID: 'FantasyHeroes.Basic.Armor.BanditArmor1 [FullHair]'
+    Name: 
+  - ID: FantasyHeroes.Basic.Armor.BanditArmor2
+    Name: 
+  - ID: FantasyHeroes.Basic.Armor.BanditCaptain
+    Name: 
+  - ID: FantasyHeroes.Basic.Armor.BanditLightArmor
+    Name: 
+  - ID: 'FantasyHeroes.Basic.Armor.BardOutfit [ShowEars]'
+    Name: 
+  - ID: FantasyHeroes.Basic.Armor.BoarArmor
+    Name: 
+  - ID: 'FantasyHeroes.Basic.Armor.BowmanVest [ShowEars]'
+    Name: 
+  - ID: FantasyHeroes.Basic.Armor.CataphractArmor
+    Name: 
+  - ID: FantasyHeroes.Basic.Armor.ChainmailLightArmor
+    Name: 
+  - ID: FantasyHeroes.Basic.Armor.ChampionArmor
+    Name: 
+  - ID: 'FantasyHeroes.Basic.Armor.ChefCostume [ShowEars]'
+    Name: 
+  - ID: FantasyHeroes.Basic.Armor.ChevalierArmor
+    Name: 
+  - ID: FantasyHeroes.Basic.Armor.ClericRobe
+    Name: 
+  - ID: FantasyHeroes.Basic.Armor.CrusaderChainmail
+    Name: 
+  - ID: FantasyHeroes.Basic.Armor.NunClothes
+    Name: 
+  - ID: FantasyHeroes.Basic.Armor.PeasantClothes
+    Name: 
+  - ID: Common.Basic.Mouth.CreepySmile
+    Name: 
+  - ID: Common.Basic.Mouth.Default
+    Name: 
+  - ID: Common.Basic.Mouth.Dot
+    Name: 
+  - ID: Common.Basic.Mouth.Mouth01
+    Name: 
+  - ID: Common.Basic.Mouth.Mouth02
+    Name: 
+  - ID: Common.Basic.Mouth.Mouth03
+    Name: 
+  - ID: Common.Basic.Mouth.Mouth04
+    Name: 
+  - ID: Common.Basic.Mouth.Mouth05
+    Name: 
+  - ID: Common.Basic.Mouth.Mouth06
+    Name: 
+  - ID: Common.Basic.Mouth.Mouth07
+    Name: 
+  - ID: Common.Basic.Mouth.Mouth08
+    Name: 
+  - ID: Common.Basic.Mouth.Mouth09
+    Name: 
+  - ID: Common.Basic.Mouth.Mouth10
+    Name: 
+  - ID: Common.Basic.Mouth.Mouth11
+    Name: 
+  - ID: Common.Basic.Mouth.Mouth12
+    Name: 
+  - ID: Common.Basic.Mouth.Mouth13
+    Name: 
+  - ID: Common.Basic.Mouth.Mouth14
+    Name: 
+  - ID: Common.Basic.Mouth.Mouth15
+    Name: 
+  - ID: Common.Basic.Mouth.Mouth16
+    Name: 
+  - ID: Common.Basic.Ears.Elf
+    Name: 
+  - ID: Common.Basic.Ears.Human
+    Name: 
+  - ID: Common.Basic.Ears.Type1
+    Name: 
+  - ID: Common.Basic.Ears.Type10
+    Name: 
+  - ID: Common.Basic.Ears.Type11
+    Name: 
+  - ID: Common.Basic.Ears.Type12
+    Name: 
+  - ID: Common.Basic.Ears.Type2
+    Name: 
+  - ID: Common.Basic.Ears.Type3
+    Name: 
+  - ID: Common.Basic.Ears.Type4
+    Name: 
+  - ID: Common.Basic.Ears.Type5
+    Name: 
+  - ID: Common.Basic.Ears.Type6
+    Name: 
+  - ID: Common.Basic.Ears.Type7
+    Name: 
+  - ID: Common.Basic.Ears.Type8
+    Name: 
+  - ID: Common.Basic.Ears.Type9
+    Name: 
+  - ID: FantasyHeroes.Basic.Armor.DraconicArmor
+    Name: 
+  - ID: Common.Basic.Body.Human
+    Name: 
+  - ID: Common.Basic.Body.HumanPants
+    Name: 
+  - ID: Common.Basic.Body.Type1
+    Name: 
+  - ID: Common.Basic.Body.Type2
+    Name: 
+  - ID: Common.Basic.Body.Type3
+    Name: 
+  - ID: Common.Basic.Body.Type4
+    Name: 
+  - ID: Common.Basic.Body.Type5
+    Name: 
+  - ID: Common.Basic.Body.Type6
+    Name: 
+  - ID: Common.Basic.Body.Type7
+    Name: 
+  - ID: Common.Basic.Body.Type8
+    Name: 
+  - ID: Common.Basic.Eyebrows.Default
+    Name: 
+  - ID: Common.Basic.Eyebrows.Eyebrows1
+    Name: 
+  - ID: Common.Basic.Eyebrows.Eyebrows10
+    Name: 
+  - ID: Common.Basic.Eyebrows.Eyebrows11
+    Name: 
+  - ID: Common.Basic.Eyebrows.Eyebrows12
+    Name: 
+  - ID: Common.Basic.Eyebrows.Eyebrows13
+    Name: 
+  - ID: Common.Basic.Eyebrows.Eyebrows14
+    Name: 
+  - ID: Common.Basic.Eyebrows.Eyebrows15
+    Name: 
+  - ID: Common.Basic.Eyebrows.Eyebrows16
+    Name: 
+  - ID: Common.Basic.Eyebrows.Eyebrows17
+    Name: 
+  - ID: Common.Basic.Eyebrows.Eyebrows18
+    Name: 
+  - ID: Common.Basic.Eyebrows.Eyebrows19
+    Name: 
+  - ID: Common.Basic.Eyebrows.Eyebrows2
+    Name: 
+  - ID: Common.Basic.Eyebrows.Eyebrows20
+    Name: 
+  - ID: Common.Basic.Eyebrows.Eyebrows21
+    Name: 
+  - ID: Common.Basic.Eyebrows.Eyebrows22
+    Name: 
+  - ID: Common.Basic.Eyebrows.Eyebrows3
+    Name: 
+  - ID: Common.Basic.Eyebrows.Eyebrows4
+    Name: 
+  - ID: Common.Basic.Eyebrows.Eyebrows5
+    Name: 
+  - ID: Common.Basic.Eyebrows.Eyebrows6
+    Name: 
+  - ID: Common.Basic.Eyebrows.Eyebrows7
+    Name: 
+  - ID: Common.Basic.Eyebrows.Eyebrows8
+    Name: 
+  - ID: Common.Basic.Eyebrows.Eyebrows9
+    Name: 
+  - ID: Common.Emoji.Eyebrows.AngryEyebrows
+    Name: 
+  - ID: Common.Emoji.Eyebrows.DeadEyebrows1
+    Name: 
+  - ID: Common.Emoji.Eyebrows.DeadEyebrows2
+    Name: 
+  - ID: Common.Emoji.Eyebrows.QuestionableEyebrows
+    Name: 
+  - ID: Common.Emoji.Eyebrows.SadEyebrows
+    Name: 
+  - ID: FantasyHeroes.Basic.MeleeWeapon1H.BlackSteelAxe
+    Name: 

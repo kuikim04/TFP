@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: c53f2aec82171a44fb2b91a4b9659b63
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 625f186215c104763be7675aa2d941aa, type: 3}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 282666
+  packageName: Flash FX Elements Pack # 2
+  packageVersion: 1.0
+  assetPath: Assets/Flash FX Elements Pack/Shader&Material/Flipbook.shadergraph
+  uploadId: 657954

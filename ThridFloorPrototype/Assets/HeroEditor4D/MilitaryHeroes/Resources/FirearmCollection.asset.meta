@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 28e732d5a6846604db331fadf9eec50e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147364
+  packageName: 'Character Editor 4D: Megapack'
+  packageVersion: 6.8
+  assetPath: Assets/HeroEditor4D/MilitaryHeroes/Resources/FirearmCollection.asset
+  uploadId: 654166

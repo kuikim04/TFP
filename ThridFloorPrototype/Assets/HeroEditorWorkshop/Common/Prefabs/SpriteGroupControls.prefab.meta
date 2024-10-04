@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7de7ffa6443f07340867480c31126481
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 247671
+  packageName: 'Fantasy Workshop: Modular Sprite Builder'
+  packageVersion: 1.7
+  assetPath: Assets/HeroEditorWorkshop/Common/Prefabs/SpriteGroupControls.prefab
+  uploadId: 658997
