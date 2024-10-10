@@ -45,6 +45,9 @@ public class UiManagerMinigame1 : MonoBehaviour
     private int lastPlayedStage;
     void Start()
     {
+        lastPlayedRegion = DataCenter.Instance.InitialRegion;
+        lastPlayedStage = DataCenter.Instance.InitialStage;
+
         UpdateScoreText();
         UpdateKnifeCountText();
         UpdateKnifeIcons();
@@ -142,7 +145,7 @@ public class UiManagerMinigame1 : MonoBehaviour
                     isSendApi = true;
                     realScore = Mathf.CeilToInt((float)knifeThrower.ScoreMiniGame / 5);
 
-                    DataCenter.Instance.SendScoreDataToApi(DataCenter.Instance.GetPlayerData().region, DataCenter.Instance.GetPlayerData().stage,
+                    DataCenter.Instance.SendScoreDataToApi(lastPlayedRegion, lastPlayedStage,
                       realScore, knifeThrower.ScoreMiniGame, EndGame, resultHeaderText, resultImageReward);
                 }
             }
@@ -189,7 +192,7 @@ public class UiManagerMinigame1 : MonoBehaviour
             isSendApi = true;
             realScore = Mathf.CeilToInt((float)knifeThrower.ScoreMiniGame / 5);
 
-            DataCenter.Instance.SendScoreDataToApi(DataCenter.Instance.GetPlayerData().region, DataCenter.Instance.GetPlayerData().stage,
+            DataCenter.Instance.SendScoreDataToApi(lastPlayedRegion, lastPlayedStage,
               realScore, knifeThrower.ScoreMiniGame, EndGame, resultHeaderText, resultImageReward);
 
             AdvanceToNextStage();
@@ -207,23 +210,29 @@ public class UiManagerMinigame1 : MonoBehaviour
 
     private void AdvanceToNextStage()
     {
-        lastPlayedRegion = DataCenter.Instance.GetPlayerData().region;
-        lastPlayedStage = DataCenter.Instance.GetPlayerData().stage;
-
-        DataCenter.Instance.GetPlayerData().stage++;
-
-        if (DataCenter.Instance.GetPlayerData().stage > 35)
+        if (!DataCenter.Instance.IsTryAgain)
         {
-            DataCenter.Instance.GetPlayerData().region++;
-            DataCenter.Instance.GetPlayerData().stage = 1;
+            DataCenter.Instance.GetPlayerData().stage++;
+
+            if (DataCenter.Instance.GetPlayerData().stage > 35)
+            {
+                DataCenter.Instance.GetPlayerData().region++;
+                DataCenter.Instance.GetPlayerData().stage = 1;
+            }
         }
 
         DataCenter.Instance.SendCurrentProgress(DataCenter.Instance.GetPlayerData().region,
-            DataCenter.Instance.GetPlayerData().stage);
+           DataCenter.Instance.GetPlayerData().stage);
+
     }
 
     public void LoadSceneAgain()
     {
+        DataCenter.Instance.IsTryAgain = false;
+
+        DataCenter.Instance.InitialRegion = DataCenter.Instance.GetPlayerData().region;
+        DataCenter.Instance.InitialStage = DataCenter.Instance.GetPlayerData().stage;
+
         SoundManager.Instance.ClickSound();
 
         AdsManager.Instance.ShowInterstitialAd(() =>
@@ -240,6 +249,8 @@ public class UiManagerMinigame1 : MonoBehaviour
 
     public void LoadSceneTryAgain()
     {
+        DataCenter.Instance.IsTryAgain = true;
+
         SoundManager.Instance.ClickSound();
 
         AdsManager.Instance.ShowInterstitialAd(() =>

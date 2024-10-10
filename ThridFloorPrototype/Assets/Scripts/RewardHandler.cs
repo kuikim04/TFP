@@ -30,7 +30,7 @@ public class RewardHandler : MonoBehaviour
         btnReceiveReward.interactable = false;
 
         btnReceiveReward.onClick.AddListener(ShowAdForReward);
-        RewardedAdsButton.OnRewardedAdCompleted += OnRewardedAdCompleted;
+        AdsManager.OnRewardedAdCompleted += OnRewardedAdCompleted;
 
         CheckCooldownFromApi();
     }
@@ -38,12 +38,12 @@ public class RewardHandler : MonoBehaviour
     private void OnDestroy()
     {
         btnReceiveReward.onClick.RemoveAllListeners();
-        RewardedAdsButton.OnRewardedAdCompleted -= OnRewardedAdCompleted;
+        AdsManager.OnRewardedAdCompleted -= OnRewardedAdCompleted;
     }
 
     private void ShowAdForReward()
     {
-        AdsManager.Instance.RewardedAdsButton.ShowAd();
+        AdsManager.Instance.ShowRewarded();
     }
 
     private void CheckCooldownFromApi()

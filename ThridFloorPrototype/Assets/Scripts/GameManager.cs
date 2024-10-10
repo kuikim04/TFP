@@ -84,6 +84,10 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
 
+
+        lastPlayedRegion = DataCenter.Instance.InitialRegion;
+        lastPlayedStage = DataCenter.Instance.InitialStage;
+
         CheckLevel();
     }
 
@@ -190,7 +194,7 @@ public class GameManager : MonoBehaviour
         {
             StarCount = CalculateStarsBasedOnTime();
 
-            DataCenter.Instance.SendScoreDataToApi(DataCenter.Instance.GetPlayerData().region, DataCenter.Instance.GetPlayerData().stage,
+            DataCenter.Instance.SendScoreDataToApi(lastPlayedRegion, lastPlayedStage,
                 StarCount, KillCount, WinCondition, textResultReward, panelResultImgRewardType);
 
             AdvanceToNextStage();
@@ -204,20 +208,20 @@ public class GameManager : MonoBehaviour
     private void AdvanceToNextStage()
     {
         isWin = true;
-        
-        lastPlayedRegion = DataCenter.Instance.GetPlayerData().region;
-        lastPlayedStage = DataCenter.Instance.GetPlayerData().stage;
 
-        DataCenter.Instance.GetPlayerData().stage++;
-
-        if (DataCenter.Instance.GetPlayerData().stage > 35)
+        if (!DataCenter.Instance.IsTryAgain)
         {
-            DataCenter.Instance.GetPlayerData().region++;
-            DataCenter.Instance.GetPlayerData().stage = 1;
+            DataCenter.Instance.GetPlayerData().stage++;
+
+            if (DataCenter.Instance.GetPlayerData().stage > 35)
+            {
+                DataCenter.Instance.GetPlayerData().region++;
+                DataCenter.Instance.GetPlayerData().stage = 1;
+            }
         }
 
         DataCenter.Instance.SendCurrentProgress(DataCenter.Instance.GetPlayerData().region,
-            DataCenter.Instance.GetPlayerData().stage);
+           DataCenter.Instance.GetPlayerData().stage);
     }
 
     private void WinCondition()
@@ -508,6 +512,11 @@ public class GameManager : MonoBehaviour
 
     public void LoadSceneAgain()
     {
+        DataCenter.Instance.IsTryAgain  = false;
+
+        DataCenter.Instance.InitialRegion = DataCenter.Instance.GetPlayerData().region;
+        DataCenter.Instance.InitialStage = DataCenter.Instance.GetPlayerData().stage;
+
         SoundManager.Instance.ClickSound();
 
         isWin = false;
@@ -530,6 +539,11 @@ public class GameManager : MonoBehaviour
 
     public void LoadSceneTryAgain()
     {
+        if (!isLose)
+        {
+            DataCenter.Instance.IsTryAgain = true;
+        }
+
         SoundManager.Instance.ClickSound();
 
         isWin = false;

@@ -4,7 +4,15 @@ apply plugin: 'com.android.library'
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 // Android Resolver Dependencies Start
+    implementation 'com.google.android.gms:play-services-ads:23.3.0' // Assets/LevelPlay/Editor/ISAdMobAdapterDependencies.xml:8
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1' // Assets/LevelPlay/Editor/IronSourceSDKDependencies.xml:15
+    implementation 'com.google.android.gms:play-services-basement:18.1.0' // Assets/LevelPlay/Editor/IronSourceSDKDependencies.xml:22
     implementation 'com.google.games:gpgs-plugin-support:0.11.01' // Assets/GooglePlayGames/com.google.play.games/Editor/GooglePlayGamesPluginDependencies.xml:11
+    implementation 'com.ironsource.adapters:admobadapter:4.3.45' // Assets/LevelPlay/Editor/ISAdMobAdapterDependencies.xml:15
+    implementation 'com.ironsource.adapters:unityadsadapter:4.3.43' // Assets/LevelPlay/Editor/ISUnityAdsAdapterDependencies.xml:8
+    implementation 'com.ironsource.sdk:mediationsdk:8.4.0' // Assets/LevelPlay/Editor/IronSourceSDKDependencies.xml:8
+    implementation 'com.ironsource:adqualitysdk:7.21.0' // Assets/LevelPlay/Editor/IronSourceAdQualityDependencies.xml:10
+    implementation 'com.unity3d.ads:unity-ads:4.12.3' // Assets/LevelPlay/Editor/ISUnityAdsAdapterDependencies.xml:15
 // Android Resolver Dependencies End
 **DEPS**}
 

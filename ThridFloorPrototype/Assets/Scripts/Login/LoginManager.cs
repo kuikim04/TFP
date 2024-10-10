@@ -40,7 +40,7 @@ public class Reward
     public string ItemID;
     public int Quantity;
     public bool RewardReceived;
-    public long Date; 
+    public long Date;
 }
 
 [Serializable]
@@ -85,8 +85,10 @@ public class RequestDataLogin
 public class VersionResponse
 {
     public string Message;
-    public string Version; 
+    public string Version;
+    public string VersionTest; 
 }
+
 
 public class LoginManager : MonoBehaviour
 {
@@ -107,7 +109,7 @@ public class LoginManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); 
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -118,7 +120,7 @@ public class LoginManager : MonoBehaviour
 
     private void Start()
     {
-        currentVersion = Application.version; 
+        currentVersion = Application.version;
         StartCoroutine(CheckGameVersion());
     }
     private IEnumerator CheckGameVersion()
@@ -135,25 +137,32 @@ public class LoginManager : MonoBehaviour
             }
 
             var json = JsonUtility.FromJson<VersionResponse>(response);
-            string latestVersion = json.Version.Trim();
 
-            if (currentVersion != latestVersion)
+            string latestVersion = json.Version.Trim();
+            string testVersion = json.VersionTest.Trim();
+
+            if (Application.isEditor) 
             {
-                ShowVersionMismatchAlert($"The Game has been updated, Press Confirm to proceed to store.");
+                EditorSignIn();
             }
             else
             {
-                if (Application.platform == RuntimePlatform.Android)
+                if (currentVersion != latestVersion && currentVersion != testVersion)
                 {
-                    SignIn();
+                    ShowVersionMismatchAlert($"The Game has been updated, Press Confirm to proceed to store.");
                 }
                 else
                 {
-                    Debug.Log($"Platform is not Android. Skipping Google Play Games login. {currentVersion}");
+                    if (Application.platform == RuntimePlatform.Android)
+                    {
+                        SignIn();
+                    }
+                    else
+                    {
+                        Debug.Log($"Platform is not Android. Skipping Google Play Games login. {currentVersion}");
+                    }
                 }
             }
-
-            Debug.Log($"Last version:{latestVersion}, Current version: {currentVersion}");
         });
     }
 
@@ -171,7 +180,7 @@ public class LoginManager : MonoBehaviour
 
         if (Application.platform == RuntimePlatform.Android)
         {
-            storeUrl = "https://play.google.com/store/apps/details?id=com.ThirdFloorPrototype.CastleHero"; 
+            storeUrl = "https://play.google.com/store/apps/details?id=com.ThirdFloorPrototype.CastleHero";
         }
         else if (Application.platform == RuntimePlatform.IPhonePlayer)
         {
@@ -189,6 +198,11 @@ public class LoginManager : MonoBehaviour
     public void SignIn()
     {
         PlayGamesPlatform.Instance.Authenticate(ProcessAuthentication);
+    }
+
+    public void EditorSignIn()
+    {
+        StartCoroutine(EditorLoginRequest());
     }
 
     internal void ProcessAuthentication(SignInStatus status)
@@ -226,7 +240,41 @@ public class LoginManager : MonoBehaviour
                 textLoginFail.text = "Sign in Failed!!";
         }
     }
+    private IEnumerator EditorLoginRequest()
+    {
+        if (DataCenter.Instance == null)
+        {
+            Debug.LogError("DataCenter.Instance is null in Login.");
+            yield break;
+        }
 
+        string url = "https://api.thirdfloorprototype.com/login";
+        RequestDataLogin requestData = new()
+        {
+            Platform = "UnityEditor",
+            Code = "",
+            Name = "Jason Todd"
+        };
+        string jsonData = JsonUtility.ToJson(requestData);
+        yield return ApiManager.Instance.PostRequest(url, jsonData, (response, statusCode) =>
+        {
+            if (!string.IsNullOrEmpty(response))
+            {
+                StartCoroutine(DataCenter.Instance.GetShopData());
+                StartCoroutine(startMenuScene.LoadMainMenuAsync());
+
+                Debug.Log("API Response: " + response);
+            }
+            else
+            {
+                if (LoginFail != null)
+                    LoginFail.SetActive(true);
+
+                if (textLoginFail != null)
+                    textLoginFail.text = "Failed to send data to API.";
+            }
+        });
+    }
     private IEnumerator SendLoginRequest(string playerName, string accessCode)
     {
         if (DataCenter.Instance == null)
@@ -236,14 +284,12 @@ public class LoginManager : MonoBehaviour
         }
 
         string url = "https://api.thirdfloorprototype.com/login";
-
         RequestDataLogin requestData = new()
         {
             Platform = "Android",
             Code = accessCode,
             Name = playerName
         };
-
         string jsonData = JsonUtility.ToJson(requestData);
 
         yield return ApiManager.Instance.PostRequest(url, jsonData, (response, statusCode) =>
@@ -257,7 +303,7 @@ public class LoginManager : MonoBehaviour
             }
             else
             {
-                if(LoginFail != null)
+                if (LoginFail != null)
                     LoginFail.SetActive(true);
 
                 if (textLoginFail != null)

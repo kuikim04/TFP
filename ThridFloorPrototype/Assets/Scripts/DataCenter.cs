@@ -110,6 +110,11 @@ public class DataCenter : MonoBehaviour
     [SerializeField]
     private Sprite itemTypeGem;
 
+
+    public int InitialRegion;
+    public int InitialStage;
+
+    public bool IsTryAgain;
     private void Awake()
     {
         if (instance == null)
@@ -132,6 +137,9 @@ public class DataCenter : MonoBehaviour
     {
         get { return playerData.stage; }
     }
+
+
+
 
     public PlayerData GetPlayerData()
     {
@@ -357,6 +365,11 @@ public class DataCenter : MonoBehaviour
                                     GetPlayerData().region = capturedRegion;
                                     GetPlayerData().stage = capturedStage;
 
+                                    InitialRegion = capturedRegion;
+                                    InitialStage = capturedStage;
+
+                                    IsTryAgain = false;
+
                                     LoadSceneByTypeGame(typeGame);
                                 }
                             }));
@@ -531,3 +544,4 @@ public class DataCenter : MonoBehaviour
     }
 
 }
+

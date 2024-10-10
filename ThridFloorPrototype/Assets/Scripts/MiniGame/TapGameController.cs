@@ -40,7 +40,10 @@ namespace Assets.HeroEditor4D.Common.Scripts
         [SerializeField] private Transform enemyTransform;
 
         private float gameTime = 10.0f;
+
         private bool gameActive = false;
+        private bool isLose = false;
+
         private float progressIncrement = 0.02f;
 
         private float botTapSpeedMin = 0.3f;
@@ -75,6 +78,9 @@ namespace Assets.HeroEditor4D.Common.Scripts
 
         void Start()
         {
+            lastPlayedRegion = DataCenter.Instance.InitialRegion;
+            lastPlayedStage = DataCenter.Instance.InitialStage;
+
             SetActiveFloor(DataCenter.Instance.Region);
             SpawnBoss();
 
@@ -300,6 +306,8 @@ namespace Assets.HeroEditor4D.Common.Scripts
             EnemyAnimationManager.SetState(MonsterState.Death);
             imgResultPanel.sprite = resultSpritePanel[0];
 
+            isLose = false;
+
             ResultImageLose.SetActive(false);
             ResultTextNameItem.gameObject.SetActive(true);
             imgResultItemRecive.gameObject.SetActive(true);
@@ -318,8 +326,8 @@ namespace Assets.HeroEditor4D.Common.Scripts
                 {
                     scoreSent = true;
 
-                    DataCenter.Instance.SendScoreDataToApi(DataCenter.Instance.GetPlayerData().region,
-                        DataCenter.Instance.GetPlayerData().stage,
+                    DataCenter.Instance.SendScoreDataToApi(lastPlayedRegion,
+                        lastPlayedStage,
                         3, 0,
                         EndGameWinTimeOut, textResultReward, panelResultImgRewardType);
 
@@ -334,6 +342,8 @@ namespace Assets.HeroEditor4D.Common.Scripts
                     ResultImageLose.SetActive(true);  
                     ResultTextNameItem.gameObject.SetActive(false);
                     imgResultItemRecive.gameObject.SetActive(false);
+
+                    isLose = true;
 
                     SoundManager.Instance.PlayVFX(deadSound); 
                     resultText.text = "Lose"; 
@@ -367,23 +377,29 @@ namespace Assets.HeroEditor4D.Common.Scripts
 
         private void AdvanceToNextStage()
         {
-            lastPlayedRegion = DataCenter.Instance.GetPlayerData().region;
-            lastPlayedStage = DataCenter.Instance.GetPlayerData().stage;
-
-            DataCenter.Instance.GetPlayerData().stage++;
-
-            if (DataCenter.Instance.GetPlayerData().stage > 35)
+            if (!DataCenter.Instance.IsTryAgain)
             {
-                DataCenter.Instance.GetPlayerData().region++;
-                DataCenter.Instance.GetPlayerData().stage = 1;
+                DataCenter.Instance.GetPlayerData().stage++;
+
+                if (DataCenter.Instance.GetPlayerData().stage > 35)
+                {
+                    DataCenter.Instance.GetPlayerData().region++;
+                    DataCenter.Instance.GetPlayerData().stage = 1;
+                }
+
             }
 
             DataCenter.Instance.SendCurrentProgress(DataCenter.Instance.GetPlayerData().region,
-                DataCenter.Instance.GetPlayerData().stage);
+               DataCenter.Instance.GetPlayerData().stage);
         }
 
         public void LoadSceneAgain()
         {
+            DataCenter.Instance.IsTryAgain = false;
+
+            DataCenter.Instance.InitialRegion = DataCenter.Instance.GetPlayerData().region;
+            DataCenter.Instance.InitialStage = DataCenter.Instance.GetPlayerData().stage;
+
             SoundManager.Instance.ClickSound();
 
             AdsManager.Instance.ShowInterstitialAd(() =>
@@ -399,6 +415,11 @@ namespace Assets.HeroEditor4D.Common.Scripts
         }
         public void LoadSceneTryAgain()
         {
+            if (!isLose)
+            {
+                DataCenter.Instance.IsTryAgain = true;
+            }
+
             SoundManager.Instance.ClickSound();
 
             AdsManager.Instance.ShowInterstitialAd(() =>

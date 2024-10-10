@@ -62,13 +62,18 @@ public class PauseManager : MonoBehaviour
 
     public void BackToMainMenu()
     {
+        DataCenter.Instance.IsTryAgain = false;
+
         SoundManager.Instance.ClickSound();
 
         Time.timeScale = 1; 
         SceneManager.LoadScene("MainMenu");
     }
+
     public void BackToMainMenuAfterWinOrLose()
     {
+        DataCenter.Instance.IsTryAgain = false;
+
         SoundManager.Instance.ClickSound();
 
         Time.timeScale = 1;

@@ -98,6 +98,7 @@ public class IAPManager : MonoBehaviour, IStoreListener
 
 
     [SerializeField] private GameObject loadingObj;
+    [SerializeField] private GameObject removeAdsBtnMain;
     private void Start()
     {
         SetupBuilder();
@@ -517,6 +518,7 @@ public class IAPManager : MonoBehaviour, IStoreListener
         else if (product.definition.id == RemoveAds_SubscriptionItem.Id)
         {
             Debug.Log("Subscription purchase complete!");
+            removeAdsBtnMain.SetActive(false);
         }
         else if (product.definition.id.StartsWith("nonconsumabeitem"))
         {
@@ -598,49 +600,49 @@ public class IAPManager : MonoBehaviour, IStoreListener
                     switch (product.definition.id)
                     {
                         case "nonconsumabeitem_thereaper":
-                            reaperButton.interactable = false;
+                            SetButtonInteractable(reaperButton, false);
                             break;
                         case "nonconsumabeitem_halloween":
-                            halloweenButton.interactable = false;
+                            SetButtonInteractable(halloweenButton, false);
                             break;
                         case "nonconsumabeitem_warpig":
-                            warpigButton.interactable = false;
+                            SetButtonInteractable(warpigButton, false);
                             break;
                         case "nonconsumabeitem_wingforce":
-                            wingforceButton.interactable = false;
+                            SetButtonInteractable(wingforceButton, false);
                             break;
                         case "nonconsumabeitem_reddragon":
-                            reddragonButton.interactable = false;
+                            SetButtonInteractable(reddragonButton, false);
                             break;
                         case "nonconsumabeitem_blackdragon":
-                            blackdragonButton.interactable = false;
+                            SetButtonInteractable(blackdragonButton, false);
                             break;
                         case "nonconsumabeitem_lightkeeper":
-                            lightkeeperButton.interactable = false;
+                            SetButtonInteractable(lightkeeperButton, false);
                             break;
                         case "nonconsumabeitem_samurai":
-                            samuraiButton.interactable = false;
+                            SetButtonInteractable(samuraiButton, false);
                             break;
                         case "nonconsumabeitem_arkangle":
-                            arkangleButton.interactable = false;
+                            SetButtonInteractable(arkangleButton, false);
                             break;
                         case "nonconsumabeitem_gladiator":
-                            gladiatorButton.interactable = false;
+                            SetButtonInteractable(gladiatorButton, false);
                             break;
                         case "nonconsumabeitem_babarianrage":
-                            babarianrageButton.interactable = false;
+                            SetButtonInteractable(babarianrageButton, false);
                             break;
                         case "nonconsumabeitem_leoarmor":
-                            leoarmorButton.interactable = false;
+                            SetButtonInteractable(leoarmorButton, false);
                             break;
                         case "nonconsumabeitem_hogkiller":
-                            hogkillerButton.interactable = false;
+                            SetButtonInteractable(hogkillerButton, false);
                             break;
                         case "nonconsumabeitem_knightofhammer":
-                            knightofhammerButton.interactable = false;
+                            SetButtonInteractable(knightofhammerButton, false);
                             break;
                         case "nonconsumabeitem_darkmage":
-                            darkmageButton.interactable = false;
+                            SetButtonInteractable(darkmageButton, false);
                             break;
                         default:
                             Debug.LogWarning($"Item with ID {product.definition.id} is not recognized.");
@@ -652,6 +654,15 @@ public class IAPManager : MonoBehaviour, IStoreListener
                     Debug.Log($"{product.definition.id} has no receipt, item not purchased.");
                 }
             }
+        }
+    }
+
+    private void SetButtonInteractable(Button button, bool interactable)
+    {
+        button.interactable = interactable;
+        if (button.transform.parent != null)
+        {
+            button.transform.parent.GetComponent<Button>().interactable = interactable;
         }
     }
 
@@ -707,17 +718,16 @@ public class IAPManager : MonoBehaviour, IStoreListener
     void ShowAds()
     {
         DisplayAds(true);
-
     }
     void DisplayAds(bool x)
     {
         if (!x)
         {
-            
+            removeAdsBtnMain.SetActive(false);
         }
         else
         {
-
+            removeAdsBtnMain.SetActive(true);
         }
     }
     #endregion

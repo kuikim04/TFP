@@ -68,8 +68,12 @@ namespace Assets.HeroEditor4D.Common.Scripts
         private int lastPlayedRegion;
         private int lastPlayedStage;
 
+        bool isLose = false;
         private void Start()
         {
+            lastPlayedRegion = DataCenter.Instance.InitialRegion;
+            lastPlayedStage = DataCenter.Instance.InitialStage;
+
             boxAnimation.SetState(MonsterState.Idle);
 
             playerHPImage.fillAmount = playerHP;
@@ -287,6 +291,8 @@ namespace Assets.HeroEditor4D.Common.Scripts
         {
             if (playerHP <= 0)
             {
+                isLose = true;
+
                 SoundManager.Instance.PlayVFX(deadSound);
 
                 isWinLose = true;
@@ -307,8 +313,8 @@ namespace Assets.HeroEditor4D.Common.Scripts
             }
             else if (enemyHP <= 0)
             {
-                DataCenter.Instance.SendScoreDataToApi(DataCenter.Instance.GetPlayerData().region,
-                    DataCenter.Instance.GetPlayerData().stage, 3, 0,
+                DataCenter.Instance.SendScoreDataToApi(lastPlayedRegion,
+                    lastPlayedStage, 3, 0,
                     () => StartCoroutine(EndGameWin()), textResultReward, panelResultImgRewardType);
 
                 AdvanceToNextStage();
@@ -317,6 +323,8 @@ namespace Assets.HeroEditor4D.Common.Scripts
 
         IEnumerator EndGameWin()
         {
+            isLose = false;
+
             SoundManager.Instance.PlayVFX(openLootSound);
             boxAnimation.SetState(MonsterState.Death);
 
@@ -339,23 +347,28 @@ namespace Assets.HeroEditor4D.Common.Scripts
 
         private void AdvanceToNextStage()
         {
-            lastPlayedRegion = DataCenter.Instance.GetPlayerData().region;
-            lastPlayedStage = DataCenter.Instance.GetPlayerData().stage;
-
-            DataCenter.Instance.GetPlayerData().stage++;
-
-            if (DataCenter.Instance.GetPlayerData().stage > 35)
+            if (!DataCenter.Instance.IsTryAgain)
             {
-                DataCenter.Instance.GetPlayerData().region++;
-                DataCenter.Instance.GetPlayerData().stage = 1;
+                DataCenter.Instance.GetPlayerData().stage++;
+
+                if (DataCenter.Instance.GetPlayerData().stage > 35)
+                {
+                    DataCenter.Instance.GetPlayerData().region++;
+                    DataCenter.Instance.GetPlayerData().stage = 1;
+                }
             }
 
             DataCenter.Instance.SendCurrentProgress(DataCenter.Instance.GetPlayerData().region,
-                DataCenter.Instance.GetPlayerData().stage);
+               DataCenter.Instance.GetPlayerData().stage);
         }
 
         public void LoadSceneAgain()
         {
+            DataCenter.Instance.IsTryAgain = false;
+
+            DataCenter.Instance.InitialRegion = DataCenter.Instance.GetPlayerData().region;
+            DataCenter.Instance.InitialStage = DataCenter.Instance.GetPlayerData().stage;
+
             SoundManager.Instance.ClickSound();
 
             AdsManager.Instance.ShowInterstitialAd(() =>
@@ -372,6 +385,9 @@ namespace Assets.HeroEditor4D.Common.Scripts
 
         public void LoadSceneTryAgain()
         {
+            if(!isLose)
+                DataCenter.Instance.IsTryAgain = true;
+
             SoundManager.Instance.ClickSound();
 
             AdsManager.Instance.ShowInterstitialAd(() =>
