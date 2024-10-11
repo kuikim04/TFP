@@ -69,8 +69,11 @@ namespace Assets.HeroEditor4D.Common.Scripts
         private int lastPlayedStage;
 
         bool isLose = false;
+
         private void Start()
         {
+            AdsManager.Instance.InCreaseAds();
+
             lastPlayedRegion = DataCenter.Instance.InitialRegion;
             lastPlayedStage = DataCenter.Instance.InitialStage;
 

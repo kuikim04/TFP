@@ -108,6 +108,17 @@
             "dependencyXmlURL": "https://s3.amazonaws.com/ssa.public/Dependencies-xmls/Bigo/${VERSION}/ISBigoAdapterDependencies.xml",
             "dependencyXmlFileName": "ISBigoAdapterDependencies.xml",
             "versions": {
+                "4.3.2.0": {
+                    "ironSourceSdkVersion": "[8.4.0, 9.0[",
+                    "android": {
+                        "adapterVersion": "4.3.2",
+                        "adNetworkVersion": "4.9.1"
+                    },
+                    "ios": {
+                        "adapterVersion": "4.3.1.1",
+                        "adNetworkVersion": "4.5.1"
+                    }
+                },
                 "4.3.1.1": {
                     "ironSourceSdkVersion": "[8.4.0, 9.0[",
                     "android": {
@@ -362,6 +373,17 @@
             "dependencyXmlFileName": "ISMobileFuseAdapterDependencies.xml",
             "isNew": true,
             "versions": {
+                "4.3.2.0": {
+                    "ironSourceSdkVersion": "[8.4.0, 9.0[",
+                    "android": {
+                        "adapterVersion": "4.3.2",
+                        "adNetworkVersion": "1.8.0"
+                    },
+                    "ios": {
+                        "adapterVersion": "4.3.2.0",
+                        "adNetworkVersion": "1.8.0"
+                    }
+                },
                 "4.3.1.1": {
                     "ironSourceSdkVersion": "[8.4.0, 9.0[",
                     "android": {
@@ -421,6 +443,17 @@
             "dependencyXmlURL": "https://s3.amazonaws.com/ssa.public/Dependencies-xmls/MyTarget/${VERSION}/ISMyTargetAdapterDependencies.xml",
             "dependencyXmlFileName": "ISMyTargetAdapterDependencies.xml",
             "versions": {
+                "4.1.27.0": {
+                    "ironSourceSdkVersion": "[8.4.0, 9.0[",
+                    "android": {
+                        "adapterVersion": "4.1.20",
+                        "adNetworkVersion": "5.22.1"
+                    },
+                    "ios": {
+                        "adapterVersion": "4.1.25.0",
+                        "adNetworkVersion": "5.21.9"
+                    }
+                },
                 "4.1.26.1": {
                     "ironSourceSdkVersion": "[8.4.0, 9.0[",
                     "android": {

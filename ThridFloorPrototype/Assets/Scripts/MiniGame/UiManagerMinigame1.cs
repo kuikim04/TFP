@@ -45,6 +45,8 @@ public class UiManagerMinigame1 : MonoBehaviour
     private int lastPlayedStage;
     void Start()
     {
+        AdsManager.Instance.InCreaseAds();
+
         lastPlayedRegion = DataCenter.Instance.InitialRegion;
         lastPlayedStage = DataCenter.Instance.InitialStage;
 

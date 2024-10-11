@@ -104,6 +104,7 @@ public class LoginManager : MonoBehaviour
     private string serverAccessCode;
     private string currentVersion;
 
+    public bool isTest = false;
     void Awake()
     {
         if (Instance == null)
@@ -141,7 +142,7 @@ public class LoginManager : MonoBehaviour
             string latestVersion = json.Version.Trim();
             string testVersion = json.VersionTest.Trim();
 
-            if (Application.isEditor) 
+            if (isTest) 
             {
                 EditorSignIn();
             }

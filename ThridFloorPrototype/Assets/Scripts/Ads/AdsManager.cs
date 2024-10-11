@@ -5,18 +5,12 @@ using UnityEngine;
 
 public class AdsManager : MonoBehaviour
 {
-
-#if UNITY_ANDROID
-    string appKey = "1fc7ba505";
-#elif UNITY_IPHONE
-    string appKey = "";
-#else
-    string appKey = "unexpected_platform";
-#endif
     public static AdsManager Instance { get; private set; }
 
     public static event Action OnRewardedAdCompleted;
-    private Action onInterstitialAdClosedCallback; 
+    private Action onInterstitialAdClosedCallback;
+
+    int adsCount = 0;
 
     void Awake()
     {
@@ -33,25 +27,30 @@ public class AdsManager : MonoBehaviour
 
     private void Start()
     {
+        adsCount = 0;
+
+#if UNITY_ANDROID
+        string appKey = "1fc7ba505";
+#elif UNITY_IPHONE
+        string appKey = "";
+#else
+        string appKey = "unexpected_platform";
+#endif
+
         IronSource.Agent.validateIntegration();
+        IronSource.Agent.init(appKey);
 
-        IronSource.Agent.init(appKey, IronSourceAdUnits.REWARDED_VIDEO);
-        IronSource.Agent.init(appKey, IronSourceAdUnits.INTERSTITIAL);
-        IronSource.Agent.init(appKey, IronSourceAdUnits.BANNER);
-
-        if (DataCenter.Instance.GetPlayerData().AdsRemove)
+        if (!DataCenter.Instance.GetPlayerData().AdsRemove)
         {
-            DestroyBanner();
-            return;
+            LoadBanner();
+            LoadInterstitial(); 
         }
-
-        LoadBanner();
-
     }
 
     private void OnEnable()
     {
-        IronSourceEvents.onSdkInitializationCompletedEvent += SdkInitialized; 
+        IronSourceEvents.onSdkInitializationCompletedEvent += SdkInitialized;
+        IronSourceEvents.onImpressionDataReadyEvent += ImpressionDataReadyEvent;
 
         IronSourceBannerEvents.onAdLoadedEvent += BannerOnAdLoadedEvent;
         IronSourceBannerEvents.onAdLoadFailedEvent += BannerOnAdLoadFailedEvent;
@@ -83,9 +82,24 @@ public class AdsManager : MonoBehaviour
         print("SDK is Initialized !!");
     }
 
+    void ImpressionDataReadyEvent(IronSourceImpressionData impressionData)
+    {
+        Debug.Log("unity - script: I got ImpressionDataReadyEvent ToString(): " + impressionData.ToString());
+        Debug.Log("unity - script: I got ImpressionDataReadyEvent allData: " + impressionData.allData);
+    }
+
     void OnApplicationPause(bool isPaused)
     {
         IronSource.Agent.onApplicationPause(isPaused);
+    }
+
+    public void InCreaseAds()
+    {
+        adsCount++;
+    }
+    public void ResetAds()
+    {
+        adsCount = 0;
     }
 
     #region banner 
@@ -144,21 +158,30 @@ public class AdsManager : MonoBehaviour
 
     public void LoadInterstitial()
     {
+        Debug.Log("Load Interstitial!!");
         IronSource.Agent.loadInterstitial();
     }
 
     public void ShowInterstitialAd(Action onAdClosed = null)
     {
+        if (adsCount != 4)
+        {
+            Debug.Log("Ads not shown, adsCount: " + adsCount);
+            onAdClosed?.Invoke();
+            return;
+        }
+
         if (DataCenter.Instance.GetPlayerData().AdsRemove)
         {
+            Debug.Log("You Have Remove Ads!!");
             onAdClosed?.Invoke();
             return;
         }
 
         if (IronSource.Agent.isInterstitialReady())
         {
-            onInterstitialAdClosedCallback = onAdClosed;
-            IronSource.Agent.showInterstitial();
+            Debug.Log("Interstitial Ready!!");
+            StartCoroutine(WaitForInterstitialAndShow(onAdClosed));
         }
         else
         {
@@ -175,19 +198,27 @@ public class AdsManager : MonoBehaviour
             yield return null;
         }
 
+        Debug.Log("Show Ads!!");
         onInterstitialAdClosedCallback = onAdClosed;
         IronSource.Agent.showInterstitial();
     }
 
     /************* Interstitial AdInfo Delegates *************/
-
     void InterstitialOnAdClosedEvent(IronSourceAdInfo adInfo)
     {
         Debug.Log("Interstitial Ad Closed");
-
         onInterstitialAdClosedCallback?.Invoke();
         onInterstitialAdClosedCallback = null;
+
+        if (adsCount == 4)
+        {
+            Debug.Log("Ads shown, resetting adsCount.");
+            ResetAds();
+        }
+
+        LoadInterstitial();
     }
+
 
     void InterstitialOnAdReadyEvent(IronSourceAdInfo adInfo)
     {

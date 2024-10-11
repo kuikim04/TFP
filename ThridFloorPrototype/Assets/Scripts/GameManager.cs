@@ -93,6 +93,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        AdsManager.Instance.InCreaseAds();
+
         foreach (GameObject img in starImg)
         {
             img.SetActive(false);

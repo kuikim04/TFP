@@ -78,6 +78,8 @@ namespace Assets.HeroEditor4D.Common.Scripts
 
         void Start()
         {
+            AdsManager.Instance.InCreaseAds();
+
             lastPlayedRegion = DataCenter.Instance.InitialRegion;
             lastPlayedStage = DataCenter.Instance.InitialStage;
 

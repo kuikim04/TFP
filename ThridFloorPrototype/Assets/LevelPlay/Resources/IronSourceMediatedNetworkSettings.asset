@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnableAdmob: 1
   AdmobAndroidAppId: ca-app-pub-5352821051627753~7820267071
-  AdmobIOSAppId: ca-app-pub-5352821051627753~7820267071
+  AdmobIOSAppId: 
